@@ -1,0 +1,179 @@
+<html>
+
+<head>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        function initialize() {
+            var mapCanvas = document.getElementById('map');
+            var mapOptions = {
+                center: new google.maps.LatLng(56.4585574, -2.9829754),
+                zoom: 18,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map = new google.maps.Map(mapCanvas, mapOptions)
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+
+
+    <title>Student Food</title>
+    <link rel="stylesheet" type="text/css" href="Student Food.css">
+
+    <meta name="description" content="Student Food Recipes">
+    <meta name="keywords" content="HTML">
+    <meta name="author" content="Dylan McLeish, Antony Capper">
+    <meta name="version" content="3">
+    <meta name="date" content="6/11/15">
+</head>
+
+<body>
+
+    <header>
+        <div class="header center" id="dropShadowHeader">
+            <div class="containerHeader">
+			<!-- Creates a header menu with links with responsive design-->
+                <nav>
+                    <div class="navigation">
+                        
+                        <ul class="menu">
+                            <li class="current"><!--This class is needed to work the menu, it tells the browser to keep Student Food displayed-->
+                                <div id="siteName">
+                                    <h1>Student Food</h1>
+                                </div>
+                            </li>
+                            <li><a href='Home.html'>Home</a></li>
+                            <li><a href='Recipes_Menu.html'>Recipes</a></li>
+                            <li><a href='FAQ.html'>FAQ</a></li>
+                            <li><a href='AboutUs.html'>About Us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <section>
+	<!--contains all content, everything bar the fixed header-->
+        <div class="containerContent">
+            <div id="background">
+
+                <div class="content">
+
+                    <div id="pageTitle">
+                        <h1>About Us</h1>
+                    </div>
+
+                    <div id="aboutUs">
+                        <div id="aboutUsText">
+                            <h2>About Us</h2>
+                            <p>We are a group of four students currently studying Computing courses at Dundee University.</p>
+                            <p> </p>
+                            <p>In our Web Authoring module we were tasked with using our knowledge of HTML and CSS to create a website which provides information to a group/community of people. </p>
+                            <p> </p>
+                            <p>We chose to dedicate our site to the Student community and specifically the food which Students consume.</p>
+                            <p> </p>
+                            <p>We wanted to offer Students a site to visit where they can find various healthy and relatively easy to make recipes for Starters, Main Courses, Desserts and Drinks. </p>
+
+
+                        </div>
+
+
+                        <div id="groupImage">
+                            <img src="GroupPhoto.jpg" alt="Group Photo">
+                        </div>
+
+                        <div class="listContainer">
+                        </div>
+
+                        <div id="groupMembers">
+                            <ul>
+                                <li class="listTitle">
+                                    <h3>Group Members</h3></li>
+                                <li>Antony Capper</li>
+                                <li>Dylan McLeish</li>
+                                <li>Josh Ng</li>
+                                <li>James Strachan</li>
+                            </ul>
+                        </div>
+
+                        <div id="contactUs">
+                            <ul>
+                                <li class="listTitle">
+                                    <h3>Contact Us</h3></li>
+                                <li>Phone : 07557046256</li>
+                                <li>Email : JoshNg@hotmail.co.uk</li>
+                                <li>Mail : Queen Mother Bldg, Dundee, DD1 4HN</li>
+                                <li>Smoke Signal : Light a fire atop the Law Hill</li>
+                            </ul>
+                        </div>
+
+                        <div id="meetUs">
+                            <ol start="0">
+                                <li class="listTitle">
+                                    <h2>Come Meet Us</h2></li>
+                                <div id="map"></div>
+                            </ol>
+                        </div>
+
+                        <div id="links">
+                            <h2>Source Links</h2>
+                            <h3>Starters</h3>
+                            <div class="link">
+                                <ul>
+                                    <li><a href="http://www.bbcgoodfood.com/recipes/1869/chicken-noodle-soup">Chicken Noodle Soup</a></li>
+                                    <li><a href="http://www.bbcgoodfood.com/recipes/9081/smoked-salmon-with-prawns-horseradish-cream-and-li">Smoked Salmon with Prawns, Horseradish Cream & Lime Vinaigrette</a></li>
+                                    <li><a href="http://www.bbcgoodfood.com/recipes/711660/marinated-beetroot-with-grilled-goats-cheese">Marinated Beetroot with Grilled Goat's Cheese</a></li>
+                                </ul>
+
+                                <h3>Main Meals</h3>
+                                <ul>
+                                    <li><a href="">Pad Thai</a> 150 Student Recipes, part of the "150 Recipes" series, published by Love Food, page 200. Image used from <a href = "http://www.tingtongthaicafe.com/">Ting Tong Thai Cafe</a></li>
+                                    <li><a href="">Chinese Vegetable Rice and Honeyed Pork</a> Chinese Vegetable Rice - 150 Student Recipes, part of the "150 Recipes" series, published by Love Food, page 204.
+									<a href = "http://www.bbcgoodfood.com/recipes/1649638/chinesestyle-pork-fillet-with-fried-rice">Honeyed Pork</a></li>
+                                    <li><a href="">Chicken Chow Mein</a> 150 Student Recipes, part of the "150 Recipes" series, published by Love Food, page 197. Image used from <a href = "http://charlotteslivelykitchen.com/chicken-chow-mein/">Charlottes Lively Kitchen</a></li>
+                                </ul>
+
+                                <h3>Desserts</h3>
+                                <ul>
+                                    <li><a href="http://www.houseandgarden.co.uk/recipes/desserts-cakes/simple-vanilla-cake">Simple Vanilla Cake</a></li>
+                                    <li><a href="http://www.jamieoliver.com/recipes/member-recipes/recipe-detail/2982/#O2wIEhmHoppil4JJ.97">Golden Syrup Flapjacks</a></li>
+                                    <li><a href="http://www.bbcgoodfood.com/recipes/1580654/millies-cookies-recipe">Cookies</a></li>
+                                </ul>
+
+                                <h3>Drinks</h3>
+                                <ul>
+                                    <li><a href="http://www.telegraph.co.uk/foodanddrink/recipes/11587375/Deliciously-Ellas-easy-banana-and-oat-breakfast-smoothie-recipe.html">Banana & Oat Breakfast Smoothie</a></li>
+                                    <li><a href="http://www.bbcgoodfood.com/recipes/2991681/creamy-mango-and-coconut-smoothie">Creamy Mango & Coconut Smoothie</a></li>
+                                    <li><a href="http://www.lifehack.org/articles/lifestyle/20-juice-and-smoothie-recipes-for-energy-and-vitality.html">Minted Fruit Cocktail Juice</a></li>
+                                </ul>
+								
+								<h3>Home Page Image</h3>
+								<ul>
+									<li><a href = "https://brewmasons.co.uk/your-own-recipe-book-new/">Recipes Icon</a></li>
+									<li><a href = "http://www.clipartbest.com/question-mark-pictures-free">FAQ Icon</a></li>
+									<li><a href = "http://www.glooo.co.uk/blog/top-exit-page-contact-us/">About Us Icon</a></li>
+								</ul>
+								
+								<h3>About Us Images</h3>
+								<ul>
+									<li><a href = "http://www.gatetotravel.de/reiseguide/ziel/las-vegas/dontmisss/las-vegas-entertainment">Group Photo</a></li>
+									</ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+        </div>
+    </section>
+
+    </div>
+</body>
+
+</html>

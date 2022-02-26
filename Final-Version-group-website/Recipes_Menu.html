@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="Student Food.css">
+	<title>Student Food</title>
+    <meta name="description" content="Student Food Recipes">
+    <meta name="keywords" content="HTML">
+    <meta name="author" content="Antony Capper">
+    <meta name="version" content="3">
+    <meta name="date" content="9/11/15">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--knowledge of this meta tag and media queries curtesty of webdesignerwall.com*, what this meta tag does is stop browers scaling html to wide viewport width and instead tells the browser to use the device width as the viewport width, this meta tag doesn't work in IE8 or older though, just testing it out-->
+</head>
+
+<body>
+    
+    <header>
+        <div class="header center" id="dropShadowHeader">
+            <div class="containerHeader">
+
+                <nav>
+				<!-- Creates a header menu with links with responsive design-->
+                    <div class="navigation">
+                        
+                        <ul class="menu">
+                            <li class="current"><!--This class is needed to work the menu, it tells the browser to keep Student Food displayed-->
+                                <div id="siteName">
+                                    <h1>Student Food</h1>
+                                </div>
+                            </li>
+                            <li><a href='Home.html'>Home</a></li>
+                            <li><a href='Recipes_Menu.html'>Recipes</a></li>
+                            <li><a href='FAQ.html'>FAQ</a></li>
+                            <li><a href='AboutUs.html'>About Us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <section>
+	<!--contains all content, everything bar the fixed header-->
+        <div class="containerContent">
+            <div id="background">
+                <div class="content">
+
+                    <div id="starters">
+                        
+                        <a href='Recipes_Starters.html'>
+                            <div class="homePageSubtitle">
+                                <h2>Starters</h2>
+                            </div>
+                            <div id="foodImage">
+                                <img src="StartersRecipe1.jpg" alt="Image of one of the Starters recipes">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="mainMeals">
+                        
+                        <a href='Recipes_MainMeals.html'>
+                            <div class="homePageSubtitle">
+                                <h2>Main Meals</h2>
+                            </div>
+                            <div id="foodImage">
+                                <img src="MainMealsRecipe1.jpg" alt="Image of one of the Main Meals recipes">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="desserts">
+                        
+                        <a href='Recipes_Desserts.html'>
+                            <div class="homePageSubtitle">
+                                <h2>Desserts</h2>
+                            </div>
+                            <div id="foodImage">
+                                <img src="DessertsRecipe2.jpg" alt="Image of one of the Desserts recipes">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="drinks">
+                        
+                        <a href='Recipes_Drinks.html'>
+                            <div class="homePageSubtitle">
+                                <h2>Drinks</h2>
+                            </div>
+                            <div id="foodImage">
+                                <img src="DrinksRecipe3.jpg" alt="Image of one of the Drinks recipes">
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+    </section>
+
+</body>
+
+</html>

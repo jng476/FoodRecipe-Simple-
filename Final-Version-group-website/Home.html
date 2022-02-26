@@ -1,0 +1,88 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="Student Food.css">
+	<title>Student Food</title>
+    <meta name="description" content="Student Food Recipes">
+    <meta name="keywords" content="HTML">
+    <meta name="author" content="Josh NG, Antony Capper">
+    <meta name="version" content="1">
+    <meta name="date" content="9/11/15">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--knowledge of this meta tag and media queries curtesty of webdesignerwall.com*, what this meta tag does is stop browers scaling html to wide viewport width and instead tells the browser to use the device width as the viewport width, this meta tag doesn't work in IE8 or older though, just testing it out-->
+</head>
+
+<body>
+
+    <header>
+        <div class="header center" id="dropShadowHeader">
+            <div class="containerHeader">
+
+                <nav>
+				<!-- Creates a header menu with links with responsive design-->
+                    <div class="navigation">
+                      
+                        <ul class="menu">
+                            <li class="current"> <!--This class is needed to work the menu, it tells the browser to keep Student Food displayed-->
+                                <div id="siteName">
+                                    <h1>Student Food</h1>
+                                </div>
+                            </li>
+                            <li><a href='Home.html'>Home</a></li>
+                            <li><a href='Recipes_Menu.html'>Recipes</a></li>
+                            <li><a href='FAQ.html'>FAQ</a></li>
+                            <li><a href='AboutUs.html'>About Us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <section>
+	<!--contains all content, everything bar the fixed header-->
+        <div class="containerContent">
+            <div id="background">
+                <div class="content">
+                    
+                    <div id="recipe">
+                        <a href='Recipes_Starters.html'>
+                            <div class="contentImage">
+                                <a href='Recipes_Menu.html'><img src="http://brewmasons.co.uk/wp-content/uploads/2015/06/il_fullxfull.191928196.jpg" alt="Recipe Book"></a>
+                            </div>
+                            <div class="homePageSubtitle">
+                                <h2><a href='Recipes_Menu.html'>Recipes</a></h2>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="faq">
+                        <a href='FAQ.html'>
+                            <div class="contentImage">
+                                <img src="http://en.hdyo.org/assets/ask-question-2-fb180173e13f21ad6ae73ba29b08cd02.jpg" alt="Question Mark">
+                            </div>
+                            <div class="homePageSubtitle">
+                                <h2>FAQ</h2>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="aboutUs">
+                        <a href='AboutUs.html'>
+                            <div class="contentImage">
+                                <img src="http://www.cleartoneholdings.co.uk/uploads/wysiwyg/Voicemail-email.jpg" alt="Contact pic">
+                            </div>
+                            <div class="homePageSubtitle">
+                                <h2>About Us</h2>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+</html>

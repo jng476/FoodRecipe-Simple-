@@ -1,0 +1,310 @@
+body {
+    width: 100%;
+    margin: auto;
+    font-family: "Helvetica";
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.containerContent {
+    width: 70em;
+    margin: 0 auto;
+}
+
+.containerHeader {
+    width: 68em;
+    margin: 0 auto;
+}
+
+.header {
+    background: #f0f0f0;
+    width: 100%;
+    height: 135px;
+    top: 0;
+    position: fixed;
+}
+
+.center {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    display: inline-block;
+    /*allows you to click the on the whole box rather than the text*/
+    text-decoration: none;
+    padding: 0.2em 1.5em;
+    line-height: 100%;
+}
+
+.menu a:hover {
+    background-color: #939393;
+    color: white;
+}
+
+.navigation {
+    float: left;
+    margin-left: 4em;
+}
+
+.menu li {
+    list-style: none;
+    font-family: "Helvetica";
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 0.8em;
+    margin-left: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline;
+}
+
+.menu a {
+    margin-top: 1.90em;
+}
+
+@media screen and (max-width:72em) {
+    /*the code for this came from http://webdesignerwall.com/tutorials/css-responsive-navigation-menu */
+    .navigation {
+        min-height: 40px;
+    }
+    .navigation ul {
+        width: 250px;
+        padding: 5px 0;
+        position: absolute;
+        top: 10px;
+    }
+    .menu li {
+        display: none;
+        /*hide all <li> items*/
+        margin: 0;
+        padding: 0;
+    }
+    .menu .current {
+        display: block;
+        /*show only current <li> item*/
+    }
+    .menu a {
+        display: block;
+        padding: 0px 32px 0px 32px;
+        text-align: left;
+        margin-top: 0.5em;
+    }
+    .menu .current a {
+        background: rgba(0, 0, 0, 0);
+    }
+    /*on nav hover*/
+    .navigation ul:hover li {
+        display: block;
+        margin: 0 0 5px 5px;
+    }
+    .menu ul:hover .current {
+        background: rgba(0, 0, 0, 0);
+    }
+    .menu.right ul {
+        left: auto;
+        right: 0;
+    }
+    .menu.center ul {
+        left: 50%;
+        margin-left: -90px;
+    }
+    .menu li {
+        margin: 0;
+        padding-top: 0;
+    }
+    .menu {
+        background: #f0f0f0;
+    }
+    #siteName {
+        background: #f0f0f0;
+        z-index: -1;
+        padding-right: 0.95em;
+    }
+}
+
+#siteName {
+    float: left;
+    font-family: "Helvetica";
+    font-size: 1.2em;
+    display: inline;
+    border: 0;
+}
+
+.content {
+    margin-top: 9em;
+    font-size: 1.2em;
+    margin-left: 3em;
+    margin-right: 1.5em;
+}
+
+#dropShadowHeader {
+    box-shadow: 0px -10px 40px 0px black;
+}
+
+#ingredients ul {
+    width: 24em;
+    float: left;
+}
+
+#foodImage img {
+    float: right;
+    border: 3px solid black;
+    margin: 1em;
+    margin-bottom: 1.2em;
+    height: 18em;
+    box-shadow: 0px 0px 50px -10px black;
+}
+
+#equipment ul {
+    width: 24em;
+    float: right;
+    border-left: 2px solid lightgrey;
+}
+
+#method ol {
+    float: left;
+    padding-bottom: 3em;
+    border-bottom: 2px solid lightgrey;
+    list-style: decimal;
+    width: 50em;
+}
+
+#recipeTitle {
+    float: left;
+    width: 24em;
+    height: 17.5em;
+    margin-top: 3em;
+    text-align: left;
+}
+
+.listTitle {
+    list-style: none;
+}
+
+.subListTitle {
+    list-style: none;
+}
+
+#background {
+    z-index: -1;
+    margin: 0 auto;
+    width: 70em;
+    margin-bottom: 0;
+    background: #f5f5f5;
+    position: absolute;
+    box-shadow: 0px -10px 40px -10px black;
+}
+
+#pageTitle h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+#starters,
+#mainmeals,
+#desserts,
+#drinks,
+#recipe,
+#faq,
+#contantUs {
+    /*Change number if content is added*/
+    height: 21em;
+    display: block;
+    background: #f5f5f5;
+}
+
+.homePageSubtitle {
+    float: left;
+    width: 12em;
+    margin-top: 3em;
+    text-align: left;
+    font-size: 2em;
+}
+
+.contentImage img {
+    float: right;
+    border: 3px solid black;
+    margin: 1em;
+    margin-top: 1.2em;
+    height: 18em;
+    box-shadow: 0px 0px 50px -10px black;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+#aboutUsText {
+    float: left;
+    width: 24em;
+    height: 22em;
+    text-align: left;
+}
+
+#groupMembers ul {
+    width: 24em;
+    float: left;
+}
+
+#contactUs ul {
+    width: 24em;
+    float: right;
+    border-left: 2px solid lightgrey;
+}
+
+#groupImage img {
+    float: right;
+    border: 3px solid black;
+    margin: 1em;
+    height: 18em;
+    box-shadow: 0px 0px 50px -10px black;
+    margin-bottom: 3em;
+}
+
+#meetUs {
+    float: left;
+    padding-bottom: 3em;
+    border-bottom: 2px solid lightgrey;
+    list-style: decimal;
+    width: 50em;
+}
+
+#links {
+    float: left;
+    padding-bottom: 3em;
+    border-bottom: 2px solid lightgrey;
+    list-style: decimal;
+    width: 50em;
+    margin-bottom: 2em;
+}
+
+.link a:link {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.link a:visited {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.link a:hover {
+    color: green;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.question {
+    font-size: 1.2em;
+}
